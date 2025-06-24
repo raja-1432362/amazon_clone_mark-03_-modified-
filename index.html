@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="navbar">
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-logo border">
+            <img src="images/amazon-logo-editorial-free-vector.jpg" alt="amazon logo" height="45px" width="132.4px">
+        </div>
+        
+        <div class="nav-address border">
+            <div class="nav-add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="nav-add">
+                <p class="add-1">Deliver to</p>
+                <p class="add-2">Kolkata 700027</p>
+            </div>
+        </div>
+        
+        <div class="nav-search">
+            <select class="search-select">
+                <option value="All">All</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Home">Home & Kitchen</option>
+                <option value="Books">Books</option>
+            </select>
+            <input placeholder="Search Amazon.in" class="search-box">
+            <div class="icon-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        
+        <div class="nav-country border">
+            <div class="nav-flag"></div>
+            <select class="nav-count-list">
+                <option value="EN">EN</option>
+                <option value="HIN">HIN</option>
+                <option value="TE">TE</option>
+                <option value="TAM">TAM</option>
+            </select>
+        </div>
+
+        <div class="nav-signin border">
+            <p class="add-1">Hello, sign in</p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-signin border">
+            <p class="add-1">Returns</p>
+            <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="cart">Cart</p>
+            <div class="cart-count">5</div>
+        </div>
+    </div>
+    
+    <!-- Navigation Panel -->
+    <div class="pannel">
+        <div class="pannel-item pannel-all">
+            <i class="fa-solid fa-bars"></i>
+            <b>All</b>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Fresh</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Amazon MiniTV</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Sell</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Best Sellers</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Mobiles</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Today's Deals</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Prime</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Customer Service</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Electronics</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">New Releases</a>
+        </div>
+        <div class="pannel-item">
+            <a href="#" class="link">Home & Kitchen</a>
+        </div>
+    </div>
+    
+    <!-- Hero Slider - FIXED -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" style="background-image: url('https://webinterpret.com/wp-content/uploads/2020/03/amazon-global-ecommerce-cart.png')"></div>
+            <div class="slide" style="background-image: url('https://i.ytimg.com/vi/314Z8QtA4go/maxresdefault.jpg')"></div>
+            <div class="slide" style="background-image: url('https://onlinetsm.com/cdn/shop/files/tsm-social-banner.png?v=1717007929')"></div>
+            <div class="slide" style="background-image: url('https://img.freepik.com/premium-vector/discount-sale-promotion-event-horizontal-banner_554907-284.jpg')"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')"></div>
+        </div>
+    </div>
+    
+    <!-- Category Grid - IMPROVED MATCHING -->
+    <div class="category-grid">
+        <h2>Shop by Category</h2>
+        <div class="columns-wrapper">
+            <div class="column">
+                <h2>Home Appliances | Up to 55% off</h2>
+                <div class="image-grid">
+                    <div class="image-link" style="background-image: url('https://tse3.mm.bing.net/th?id=OIP.hOhIsfcZIx3X4MKbuPDhLwHaHq&pid=Api&P=0&h=180')">
+                        <a href="#">Refrigerators</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://tse4.mm.bing.net/th?id=OIP.-h-CMbIbrgjTRgtUGSbF_QHaH6&pid=Api&P=0&h=180')">
+                        <a href="#">Washing Machines</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://img.freepik.com/premium-psd/air-conditioner-sales-poster-design-template_987701-1573.jpg')">
+                        <a href="#">Air Conditioners</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.ryJMKWR6Suqg2jE_ug2FIwHaGy&pid=Api&P=0&h=180')">
+                        <a href="#">Microwaves</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h2>Home Decor | Up to 25% off</h2>
+                <div class="image-grid">
+                    <div class="image-link" style="background-image: url('https://m.media-amazon.com/images/I/81fUkvTtj5S._AC_SL1500_.jpg')">
+                        <a href="#">Living Room</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.ngFPkMAaxFIRoVpNJeEHEQHaE8&pid=Api&P=0&h=180')">
+                        <a href="#">Bedroom</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://img.freepik.com/premium-psd/kitchen-appliances-product-flyer-poster-template_9203-286.jpg')">
+                        <a href="#">Kitchen</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://i.pinimg.com/736x/8d/77/40/8d77400d2d98717c2e830824d6fdd91c.jpg')">
+                        <a href="#">Lighting</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h2>Audio Gear | Starting ₹149</h2>
+                <div class="image-grid">
+                    <div class="image-link" style="background-image: url('https://m.media-amazon.com/images/I/71K3bSa44iL._AC_SL1500_.jpg')">
+                        <a href="#">Wireless</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://m.media-amazon.com/images/I/71TsJJTbvYL._AC_SL1500_.jpg')">
+                        <a href="#">Earphones</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://m.media-amazon.com/images/I/61427hukUiL.jpg')">
+                        <a href="#">Gaming</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://i.pinimg.com/originals/05/64/e3/0564e3c72c92a96db971226a9b70247e.jpg')">
+                        <a href="#">Accessories</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <h2>Auto Accessories | Up to 60% off</h2>
+                <div class="image-grid">
+                    <div class="image-link" style="background-image: url('https://m.media-amazon.com/images/I/912Gjnquc5L.jpg')">
+                        <a href="#">Car Care</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://m.media-amazon.com/images/I/71bCyrGXmUL._AC_SL1500_.jpg')">
+                        <a href="#">Interior</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://i.pinimg.com/736x/6d/e5/de/6de5de27f7eaf2c7c2eb8ec608a8851b.jpg')">
+                        <a href="#">Tools</a>
+                    </div>
+                    <div class="image-link" style="background-image: url('https://tse4.mm.bing.net/th?id=OIP.hg83sxfvEivFnXyYYY9GewAAAA&pid=Api&P=0&h=180')">
+                        <a href="#">Accessories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Deals of the Day - IMPROVED -->
+    <div class="products-section">
+        <div class="section-header">
+            <h2 class="section-title">Deals of the Day</h2>
+            <a href="#" class="see-all">See all deals</a>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Smart Watch with Heart Rate Monitor</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(2,341)</span>
+                    </div>
+                    <div class="product-price">₹3,499</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>FREE delivery by Tomorrow</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/71Rz4nN%2BNFL._AC_SL1500_.jpg')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Wireless Bluetooth Headphones with Noise Cancellation</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(4,215)</span>
+                    </div>
+                    <div class="product-price">₹2,999</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>FREE delivery by Tomorrow</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/719r-Zr-PbL._AC_SL1500_.jpg')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Smart Fitness Band with Heart Rate Monitor</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(1,874)</span>
+                    </div>
+                    <div class="product-price">₹1,799</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>FREE delivery by Tomorrow</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/51-dgB0o0uL._AC_.jpg')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Portable Bluetooth Speaker with 20W Sound</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">(3,567)</span>
+                    </div>
+                    <div class="product-price">₹2,299</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>FREE delivery by Tomorrow</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://i.gadgets360cdn.com/products/large/1-Copy-800x796-1641197135.jpg')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Professional DSLR Camera with 24.2MP Sensor</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(1,234)</span>
+                    </div>
+                    <div class="product-price">₹42,499</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>FREE delivery by Tomorrow</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://m.media-amazon.com/images/I/71Ki7Jjys9L._AC_SL1500_.jpg')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Gaming Laptop with RTX 3060 Graphics</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(3,012)</span>
+                    </div>
+                    <div class="product-price">₹89,999</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>FREE delivery by Tomorrow</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- New: Featured Brands Section -->
+    <div class="products-section">
+        <div class="section-header">
+            <h2 class="section-title">Top Brands</h2>
+            <a href="#" class="see-all">Shop all brands</a>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://img.freepik.com/premium-photo/photo-apple-product-lineup_1055425-23713.jpg')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Apple Products</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(8,452)</span>
+                    </div>
+                    <div class="product-price">Up to 20% off</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>Free delivery</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://img.freepik.com/premium-vector/samsung-phone-display-poster_1274919-37.jpg?semt=ais_hybrid')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Samsung Electronics</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="rating-count">(7,319)</span>
+                    </div>
+                    <div class="product-price">Up to 30% off</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>Free delivery</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://tse2.mm.bing.net/th?id=OIP.H5Z0iRyo1U7d5YIwwHX0EwHaEo&pid=Api&P=0&h=180')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">MacBook Pro</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(5,678)</span>
+                    </div>
+                    <div class="product-price">From ₹1,29,999</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>Free delivery</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://i.pinimg.com/originals/5c/f6/18/5cf6180733a55545edbb461cf5272058.jpg')"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Nike Footwear</h3>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">(9,123)</span>
+                    </div>
+                    <div class="product-price">Up to 40% off</div>
+                    <div class="prime-badge">
+                        <i class="fas fa-box"></i>
+                        <span>Free delivery</span>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            Back to top
+        </div>
+        
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Sell under Amazon Accelerator</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">COVID-19 and Amazon</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-logo">
+           <img src="images/amazon-logo-editorial-free-vector.jpg" alt="amazon logo" height="45px" width="132.4px">
+            
+            <div class="copyright">
+                © 2025 Amazon Clone. This demo website showcases the potential of e-commerce platforms I can develop; for a deeper understanding of my capabilities and to discuss your project, feel free to explore my portfolio website and let's connect!.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
